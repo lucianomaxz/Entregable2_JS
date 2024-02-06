@@ -1,10 +1,11 @@
+body{
+    background-color: #eaeeef;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
 .divRemeras{
     text-align: center;
 }
-.remeraImgJS{
-    width: 330px;
-    height: 330px;
-}
+
 button {
     color: #ffffff;
     background-color: #2d63c8;
@@ -16,4 +17,44 @@ button {
 button:hover {
     color: #2d63c8;
     background-color: #ffffff;
+}
+
+.contadorRemeras{
+    display: inline;
+    margin-right: 1rem;
+}
+.botonSumarOtraRemera, .botonRestarOtraRemera {
+    margin: 0px 10px;
+    padding: 15px 25px;
+    border-radius: 38%;
+    margin-bottom: 7px;
+}
+.container-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+}
+.remeraJS{
+    margin: auto;
+    display: ruby;
+}
+.remeraJSCarrito{
+    display: auto;
+}
+.remeraImgJS{
+    width: 330px;
+    height: 330px;
+}
+
+h3,h4{
+    width: 330px;
+    text-align: center;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.swal2-cancel{
+    margin-right: 2px;
 }
