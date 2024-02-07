@@ -258,7 +258,9 @@ verCarrito.addEventListener("click",()=>{
         botonQuitarCarritoRemera.addEventListener("click",()=>{
 
           
-
+          if (productosCarrito.length == 0){
+            footer.removeChild(finalizarCompra);
+          }
 
           if (el.mostrar == true){
             el.stock = auxStockS;
@@ -279,7 +281,7 @@ verCarrito.addEventListener("click",()=>{
              container.removeChild(cardRemera);
       
              localStorage.setItem("carrito",JSON.stringify(productosCarrito));
-             
+
              if (productosCarrito.length == 0){
               footer.removeChild(finalizarCompra);
             }
